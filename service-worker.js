@@ -6,14 +6,17 @@ self.addEventListener('install', event => {
     console.log("SW Install");
 
     const _appShellFiles = [
-    '/index.html', 
-    '/css/styles.css', 
-    '/js/app.js', 
-    '/js/database.js', 
-    '/manifest.json',
-    '/assets/images/logo.png',  
-    '/assets/images/favicon.ico',
-    '/assets/icons/icon-144x144.png'
+        "./",
+        '/index.html', 
+        '/css/styles.css', 
+        '/js/app.js', 
+        '/js/database.js', 
+        '/manifest.json',
+        '/assets/images/logo.png',  
+        '/assets/images/favicon.ico',
+        '/assets/icons/favico.ico',
+        '/assets/icons/icon-144x144.png',
+        '/assets/icons/apple-touch-icon.png',
     ];
 
     const _immutableFiles = ['/css/bootstrap.min.css', '/js/bootstrap.bundle.min.js', 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;500&display=swap'];
