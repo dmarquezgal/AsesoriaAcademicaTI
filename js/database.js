@@ -3,8 +3,6 @@ let db;
 let networkConnection = true;
 let requestDatabase = indexedDB.open('db-asesorias', 1);
 const form = document.getElementById('form');
-const alert_content_offline = document.querySelector("#alert-content-offline");
-const alert_content_online = document.querySelector("#alert-content-online");
 
 requestDatabase.onupgradeneeded = (event) => {
     db = event.target.result;
@@ -49,12 +47,28 @@ form.addEventListener('submit', (event) => {
 });
 
 window.addEventListener("online", () => {
-    alert_content_online.classList.remove("d-none");
-    alert_content_offline.classList.add("d-none");
+    Swal.fire({
+        position: 'bottom-end',
+        title: 'Genial!',
+        text: 'Se ha restablecido la conexión a internet.',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: '5000',
+        toast: true,
+        background: '#E6FFD3',
+    });
 });
 
 window.addEventListener("offline", () => {
-    alert_content_offline.classList.remove("d-none");
-    alert_content_online.classList.add("d-none");
     networkConnection = false;
+    Swal.fire({
+        position: 'bottom-end',
+        title: 'Ooops!',
+        text: 'Sinnnn conexión a internet.',
+        icon: 'error',
+        showConfirmButton: false,
+        // timer: '5000',
+        toast: true,
+        background: '#FFDADA'
+    });
 });

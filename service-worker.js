@@ -1,4 +1,4 @@
-let staticCache = 'staticCache@v1';
+let staticCache = 'staticCache@v4';
 let dynamicCache = 'dynamicCache@v1';
 let immutableCache = 'immutableCache@v1';
 
@@ -19,7 +19,7 @@ self.addEventListener('install', event => {
         '/assets/icons/apple-touch-icon.png',
     ];
 
-    const _immutableFiles = ['/css/bootstrap.min.css', '/js/bootstrap.bundle.min.js', 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;500&display=swap'];
+    const _immutableFiles = ['/css/bootstrap.min.css', '/js/bootstrap.bundle.min.js', 'https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;500&display=swap', 'https://cdn.jsdelivr.net/npm/sweetalert2@11'];
 
     const saveStaticCache = caches.open(staticCache)
         .then((cache) => cache.addAll(_appShellFiles));
