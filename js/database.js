@@ -64,7 +64,7 @@ window.addEventListener("offline", () => {
     Swal.fire({
         position: 'bottom-end',
         title: 'Ooops!',
-        text: 'Sinnnn conexión a internet.',
+        text: 'Sin conexión a internet.',
         icon: 'error',
         showConfirmButton: false,
         // timer: '5000',
