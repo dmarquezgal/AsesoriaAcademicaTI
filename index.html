@@ -58,28 +58,28 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label for="matricula" class="form-label">Matrícula:</label>
-                            <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Ej. 180604">
+                            <input type="number" class="form-control" id="matricula" name="matricula" placeholder="Ej. 180604" required>
                         </div>
                     </div>
 
                     <div class="col-md-5">
                         <div class="form-group">
                             <label for="nombre" class="form-label">Nombre(s):</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
                         </div>
                     </div>
 
                     <div class="col-md-5">
                         <div class="form-group">
                             <label for="apellidos" class="form-label">Apellidos:</label>
-                            <input type="text" class="form-control" id="apellidos" apellidos="apellidos" placeholder="Ingrese sus apellidos">
+                            <input type="text" class="form-control" id="apellidos" apellidos="apellidos" placeholder="Ingrese sus apellidos" required>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="plandeEstudios" class="form-label">Plan de Estudios:</label>
-                            <select class="form-select" aria-label="Selección de carrera" id="plandeEstudios" name="plandeEstudios">
+                            <select class="form-select" aria-label="Selección de carrera" id="plandeEstudios" name="plandeEstudios" required>
                                 <option value="TIADSM">TSU en TI Área Desarrollo de Software Multiplataforma</option>
                                 <option value="TIAEVND">TSU en TI Área Entornos Virtuales y Negocios Digitales</option>
                                 <option value="IDGS">Ing. en Desarrollo y Gestión de Software</option>
@@ -91,21 +91,21 @@
                     <div class="col-md-2">
                         <div class="form-group">
                             <label for="cuatrimestre" class="form-label">Cuatrimestre:</label>
-                            <input type="number" class="form-control" id="cuatrimestre" name="cuatrimestre" placeholder="Ej. 10">
+                            <input type="number" class="form-control" id="cuatrimestre" name="cuatrimestre" placeholder="Ej. 10" required>
                         </div>
                     </div>
 
                     <div class="col-md-2">
                         <div class="form-group">
                             <label for="grupo" class="form-label">Grupo:</label>
-                            <input type="text" class="form-control" id="grupo" name="grupo" placeholder="Ej. A">
+                            <input type="text" class="form-control" id="grupo" name="grupo" placeholder="Ej. A" required>
                         </div>
                     </div>
 
                     <div class="col-md-2">
                         <div class="form-group">
                             <label for="turno" class="form-label">Turno:</label>
-                            <select class="form-select" id="turno" name="turno" aria-label="Selección de turno">
+                            <select class="form-select" id="turno" name="turno" aria-label="Selección de turno" required>
                                 <option value="semanal">Semanal</option>
                                 <option value="sabatino">Sabatino</option>
                             </select>
@@ -116,14 +116,14 @@
                         <div class="form-group">
                             <label for="email" class="form-label">Correo institucional:</label>
                             <input type="email" class="form-control" id="email" name="email"
-                                placeholder="Ej. nombre.apellidos@utxicotepec.edu.mx">
+                                placeholder="Ej. nombre.apellidos@utxicotepec.edu.mx" required>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="tel" class="form-label">Número de celular:</label>
-                            <input type="number" class="form-control" id="tel" name="tel" placeholder="Ej. 7641547852">
+                            <input type="number" class="form-control" id="tel" name="tel" placeholder="Ej. 7641547852" required>
                         </div>
                     </div>
 
@@ -131,7 +131,7 @@
                         <div class="form-group">
                             <label for="asignatura" class="form-label">Asignatura:</label>
                             <input type="text" class="form-control" id="asignatura" name="asignatura"
-                                placeholder="Ej. Aplicaciones Web Progresivas">
+                                placeholder="Ej. Aplicaciones Web Progresivas" required>
                         </div>
                     </div>
 
@@ -139,14 +139,14 @@
                         <div class="form-group">
                             <label for="tema" class="form-label">Tema a abordar en la asesoría:</label>
                             <input type="text" class="form-control" id="tema" name="tema"
-                                placeholder="Ej. Estrategias de caché">
+                                placeholder="Ej. Estrategias de caché" required>
                         </div>
                     </div>
 
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="dateAsesoria">Fecha de asesoría: <p class="text-secondary small">Omitir días festivos.</p></label>
-                            <input type="date" class="form-control" id="dateAsesoria" name="dateAsesoria" placeholder="Fecha de asesoría">
+                            <input type="date" class="form-control" id="dateAsesoria" name="dateAsesoria" placeholder="Fecha de asesoría" required>
                         </div>
                     </div>
 
@@ -155,7 +155,7 @@
                             <label for="datePast">Horario de asesoría: <p class="text-secondary small">Únicamente se
                                     dispone
                                     de una hora de asesoría.</p></label>
-                            <input type="time" class="form-control" id="timeAsesoria" name="timeAsesoria" placeholder="Horario de asesoría">
+                            <input type="time" class="form-control" id="timeAsesoria" name="timeAsesoria" placeholder="Horario de asesoría" required>
                         </div>
                     </div>
 
